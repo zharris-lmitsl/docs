@@ -9,72 +9,94 @@
   },
   "favicon": "/favicon.svg",
   "navigation": {
-    "global": {
-      "anchors": [
-        {
-          "anchor": "Documentation",
-          "icon": "book-open-cover",
-          "href": "https://docs.erpsy.com"
-        }
-      ]
-    },
-    "tabs": [
+    "groups": [
       {
-        "tab": "Guides",
-        "groups": [
+        "group": "Introduction",
+        "expanded": false,
+        "pages": [
+          "introduction/what-is-erpsy",
+          "introduction/core-concepts",
+          "introduction/how-erpsy-is-organized"
+        ]
+      },
+      {
+        "group": "Getting Started",
+        "expanded": false,
+        "pages": [
+          "getting-started/overview",
+          "getting-started/company-setup",
+          "getting-started/users-and-permissions",
+          "getting-started/navigation-overview"
+        ]
+      },
+      {
+        "group": "Modules",
+        "expanded": false,
+        "pages": [
           {
-            "group": "Getting started",
+            "group": "CRM",
             "pages": [
-              "index",
-              "quickstart",
-              "development"
+              "modules/crm/overview"
             ]
           },
           {
-            "group": "Customization",
+            "group": "PMO",
             "pages": [
-              "essentials/settings",
-              "essentials/navigation"
+              "modules/pmo/overview"
             ]
           },
           {
-            "group": "Writing content",
+            "group": "Accounting",
             "pages": [
-              "essentials/markdown",
-              "essentials/code",
-              "essentials/images",
-              "essentials/reusable-snippets"
+              "modules/accounting/overview",
+              "modules/accounting/accounting-settings",
+              {
+                "group": "Transactions",
+                "pages": [
+                  "purchase-orders",
+                  "temp-pos",
+                  "vendor-credits",
+                  "bills",
+                  "bill-payments",
+                  "journal-entries",
+                  "recurring-transactions"
+                ]
+              }
             ]
           },
           {
-            "group": "AI tools",
+            "group": "HR",
             "pages": [
-              "ai-tools/cursor",
-              "ai-tools/claude-code",
-              "ai-tools/windsurf"
+              "modules/hr/overview",
+              "modules/hr/payroll-setup",
+              "modules/hr/run-payroll"
             ]
           }
         ]
       },
       {
-        "tab": "API reference",
-        "hidden": true,
-        "groups": [
-          {
-            "group": "API documentation",
-            "pages": [
-              "api-reference/introduction"
-            ]
-          },
-          {
-            "group": "Endpoint examples",
-            "pages": [
-              "api-reference/endpoint/get",
-              "api-reference/endpoint/create",
-              "api-reference/endpoint/delete",
-              "api-reference/endpoint/webhook"
-            ]
-          }
+        "group": "Workflows",
+        "expanded": false,
+        "pages": [
+          "workflows/lead-to-cash",
+          "workflows/quote-to-contract",
+          "workflows/job-to-invoice"
+        ]
+      },
+      {
+        "group": "Administration",
+        "expanded": false,
+        "pages": [
+          "admin/company-settings",
+          "admin/roles-and-permissions"
+        ]
+      },
+      {
+        "group": "Troubleshooting",
+        "expanded": false,
+        "pages": [
+          "troubleshooting/faq",
+          "troubleshooting/common-issues"
         ]
       }
     ]
@@ -114,6 +136,6 @@
   },
   "appearance": {
     "strict": true,
-    "default": "light"
+    "default": "dark"
   }
 }
