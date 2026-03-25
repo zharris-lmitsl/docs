@@ -108,12 +108,7 @@
         "label": "Support",
         "href": "mailto:support@erpsy.com"
       }
-    ],
-    "primary": {
-      "type": "button",
-      "label": "Dashboard",
-      "href": "https://dashboard.mintlify.com"
-    }
+    ]
   },
   "contextual": {
     "options": [
