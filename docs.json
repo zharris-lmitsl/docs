@@ -16,17 +16,16 @@
         "pages": [
           "introduction/what-is-erpsy",
           "introduction/core-concepts",
-          "introduction/how-erpsy-is-organized"
-        ]
-      },
-      {
-        "group": "Getting Started",
-        "expanded": false,
-        "pages": [
-          "getting-started/overview",
-          "getting-started/company-setup",
-          "getting-started/users-and-permissions",
-          "getting-started/navigation-overview"
+          "introduction/how-erpsy-is-organized",
+          {
+            "group": "Getting Started",
+            "pages": [
+              "getting-started/overview",
+              "getting-started/company-setup",
+              "getting-started/users-and-permissions",
+              "getting-started/navigation-overview"
+            ]
+          }
         ]
       },
       {
@@ -84,14 +83,6 @@
         ]
       },
       {
-        "group": "Administration",
-        "expanded": false,
-        "pages": [
-          "admin/company-settings",
-          "admin/roles-and-permissions"
-        ]
-      },
-      {
         "group": "Troubleshooting",
         "expanded": false,
         "pages": [
@@ -112,15 +103,15 @@
   },
   "contextual": {
     "options": [
-     "copy",
-     "view",
-     "chatgpt",
-     "claude",
-     "perplexity",
-     "mcp",
-     "cursor",
-     "vscode"
-   ]
+      "copy",
+      "view",
+      "chatgpt",
+      "claude",
+      "perplexity",
+      "mcp",
+      "cursor",
+      "vscode"
+    ]
   },
   "footer": {
     "socials": {
